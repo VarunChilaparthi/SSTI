@@ -1,0 +1,26 @@
+ServerSideTemplateInjection
+I've tried to emulate Server Side Template Injection using flask web-framework.
+
+Server-Side Template Injection
+
+Server-side template injections (SSTI) are vulnerabilities that let the attacker inject code into such server-side templates. In simple terms, the attacker can introduce code that is actually processed by the server-side template. This may result in remote code execution (RCE)
+Steps
+pip3 install Flask
+
+pip3 install virtualenv
+
+On Linux
+mkdir SSTIProject
+cd SSTIProject
+python3 -m venv venv
+On Windows
+mkdir SSTIProject
+cd SSTIProject
+p3 -m venv venv
+Windows: set FLASK_APP=hello.py
+
+Linux: export FLASK_APP=hello.py
+
+All you have to do now is run
+
+flask run
